@@ -1,0 +1,50 @@
+/* theme color */
+$--color-primary: #0052cc;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+.w-200 {
+  width: 170px !important;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.el-form-item {
+
+}
+.authorization-form {
+  .el-form-item {
+    label {
+      color: #6b778c !important;
+      font-weight: 500;
+      font-size: 14px;
+      //&:first-letter{
+      //  text-decoration: underline !important;
+      //}
+      span {
+        font-weight: normal;
+        color: #1a2f53;
+      }
+      span:first-letter{
+        text-decoration: underline !important;
+      }
+    }
+    button {
+      font-family: inherit;
+      font-size: 14px;
+    }
+  }
+  .el-alert {
+    p {
+      color:#344563 !important;
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
+  }
+}

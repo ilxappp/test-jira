@@ -1,0 +1,21 @@
+<template>
+  <div>
+    <AuthorizationForm
+
+    />
+  </div>
+</template>
+
+<script>
+import AuthorizationForm from "@/components/AuthorizationForm";
+export default {
+  name: "Authorization",
+  components: {
+    AuthorizationForm
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
