@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import AuthorizationForm from "@/components/AuthorizationForm";
+import AuthorizationForm from "@/components/authorization/authorization-form";
 export default {
   name: "Authorization",
   components: {

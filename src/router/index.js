@@ -8,11 +8,11 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			component: () => import('./views/Authorization')
+			component: () => import('@/pages/Authorization')
 		},
 		{
 			path: '/projects',
-			component: () => import('./views/Projects.vue')
+			component: () => import('@/pages/Projects.vue')
 		}
 	]
 })
