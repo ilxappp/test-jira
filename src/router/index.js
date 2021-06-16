@@ -8,11 +8,15 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			component: () => import('@/pages/Authorization')
+			component: () => import('@/pages/Authorization.vue')
 		},
 		{
 			path: '/projects',
 			component: () => import('@/pages/Projects.vue')
+		},
+		{
+			path: '/recovery',
+			component: () => import('@/pages/Recovery.vue')
 		}
 	]
 })

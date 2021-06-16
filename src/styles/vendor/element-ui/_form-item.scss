@@ -1,0 +1,45 @@
+.el-form-item {
+  &.authorization-form-item {
+    label {
+      color: #6b778c !important;
+      font-weight: 500;
+      font-size: 14px;
+      &:first-letter{
+        text-decoration: underline !important;
+      }
+      span {
+        font-weight: normal;
+        color: #1a2f53;
+      }
+      span:first-letter{
+        text-decoration: underline !important;
+      }
+    }
+    button {
+      font-family: inherit;
+      font-size: 14px;
+    }
+  }
+  &.recovery-form-item {
+    margin-bottom: 5px;
+    input {
+      width: 250px;
+    }
+    label {
+      color: #6b778c !important;
+      font-weight: 500;
+      font-size: 14px;
+      span {
+        font-weight: normal;
+        color: #1a2f53;
+      }
+      span:first-letter{
+        text-decoration: underline !important;
+      }
+    }
+    button {
+      font-family: inherit;
+      font-size: 14px;
+    }
+  }
+}

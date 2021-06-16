@@ -4,7 +4,7 @@
       <h1>Welcome to DC Jira</h1>
     </div>
     <el-alert
-        class="mb-20"
+        class="mb-20 authorization-form-alert"
         type="error"
         description="Sorry, your username and password are incorrect - please try again."
         show-icon
@@ -13,22 +13,22 @@
     >
     </el-alert>
     <div class="authorization-form__body">
-      <el-form ref="from" :model="form" label-width="150px" size="mini">
-        <el-form-item label="Username">
+      <el-form ref="form" :model="form" label-width="150px" size="mini">
+        <el-form-item label="Username" class="authorization-form-item">
           <el-input v-model="form.username" class="w-200" accesskey="u"></el-input>
         </el-form-item>
-        <el-form-item label="Password">
+        <el-form-item label="Password" class="authorization-form-item">
           <el-input v-model="form.password" class="w-200" accesskey="p"></el-input>
         </el-form-item>
-        <el-form-item>
+        <el-form-item class="authorization-form-item">
           <el-checkbox v-model="form.remember" label="Remember my login on this computer"></el-checkbox>
         </el-form-item>
         <div class="authorization-form__help">
           <p>Not a member? To request an account, please contact your Jira administrator</p>
         </div>
-        <el-form-item>
+        <el-form-item class="authorization-form-item">
           <el-button type="primary" @click="onSubmit">Log In</el-button>
-          <router-link to="/" class="ml-10">
+          <router-link to="/Recovery" class="ml-10">
             <el-link type="primary" :underline="false">Can't access your account?</el-link>
           </router-link>
         </el-form-item>
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "AuthorizationForm",
+  name: "Authorization-form",
   data: () => ({
     form: {
       username: '',

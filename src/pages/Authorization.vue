@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AuthorizationForm
+    <authorization-form
 
     />
   </div>
